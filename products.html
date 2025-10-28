@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Shoppee - Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Lato', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-pink-50 font-sans">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html">
+                <img src="1001.jpg" alt="Local Shoppee Logo" class="h-12 w-auto">
+            </a>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="index.html" class="text-gray-600 hover:text-pink-600">Home</a>
+                <a href="products.html" class="text-pink-600 font-bold">Products</a>
+                <a href="about.html" class="text-gray-600 hover:text-pink-600">About & Contact</a>
+            </div>
+            <div class="flex items-center space-x-5">
+                <a href="signin.html" class="text-gray-600 hover:text-pink-600 text-sm font-medium">Sign In</a>
+                <a href="cart.html" class="relative text-gray-600 hover:text-pink-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007Z" /></svg>
+                    <span class="absolute -top-2 -right-2 bg-pink-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center font-bold">3</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main class="container mx-auto px-4 py-8">
+        <div class="mb-10">
+            <input type="search" placeholder="Search for Sarees, Kurtis, and more..." class="w-full p-4 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-500 text-lg">
+        </div>
+        <section class="mb-12">
+            <h2 class="text-4xl font-serif font-bold text-gray-800 mb-8 text-center">Trending Sarees</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                    <a href="product-detail.html"><img src="1015.jpg" alt="White Saree" class="w-full h-80 object-cover"></a>
+                    <div class="p-5">
+                        <h3 class="text-xl font-serif font-bold text-gray-800">White Georgette Saree</h3>
+                        <p class="text-xl font-bold text-pink-600 mt-2">₹600</p>
+                        <a href="product-detail.html" class="block w-full text-center bg-pink-600 text-white rounded-lg py-2 px-4 mt-4 font-semibold hover:bg-pink-700">Add to Cart</a>
+                    </div>
+                </div>
+                 <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                    <a href="product-detail.html"><img src="1018.jpg" alt="Red Saree" class="w-full h-80 object-cover"></a>
+                    <div class="p-5">
+                        <h3 class="text-xl font-serif font-bold text-gray-800">Red Embroidered Saree</h3>
+                        <p class="text-xl font-bold text-pink-600 mt-2">₹600</p>
+                        <a href="product-detail.html" class="block w-full text-center bg-pink-600 text-white rounded-lg py-2 px-4 mt-4 font-semibold hover:bg-pink-700">Add to Cart</a>
+                    </div>
+                </div>
+                 <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                    <a href="product-detail.html"><img src="1016.jpg" alt="Festive Saree" class="w-full h-80 object-cover"></a>
+                    <div class="p-5">
+                        <h3 class="text-xl font-serif font-bold text-gray-800">Festive Red Saree</h3>
+                        <p class="text-xl font-bold text-pink-600 mt-2">₹600</p>
+                        <a href="product-detail.html" class="block w-full text-center bg-pink-600 text-white rounded-lg py-2 px-4 mt-4 font-semibold hover:bg-pink-700">Add to Cart</a>
+                    </div>
+                </div>
+                 <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                    <a href="product-detail.html"><img src="1015.jpg" alt="Saree" class="w-full h-80 object-cover"></a>
+                    <div class="p-5">
+                        <h3 class="text-xl font-serif font-bold text-gray-800">Light Blue Organza</h3>
+                        <p class="text-xl font-bold text-pink-600 mt-2">₹600</p>
+                        <a href="product-detail.html" class="block w-full text-center bg-pink-600 text-white rounded-lg py-2 px-4 mt-4 font-semibold hover:bg-pink-700">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-12">
+            <h2 class="text-4xl font-serif font-bold text-gray-800 mb-8 text-center">Festival Wear</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                </div>
+        </section>
+    </main>
+    <footer class="bg-gray-800 text-gray-300 mt-16">
+        <div class="container mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div><h4 class="text-lg font-serif font-bold text-white mb-3">Address</h4><p>📍 Kakinada, Andhra Pradesh, India</p></div>
+            <div><h4 class="text-lg font-serif font-bold text-white mb-3">Contact</h4><p>📞 6302300945</p><p>✉️ support@localshoppee.com</p></div>
+            <div><h4 class="text-lg font-serif font-bold text-white mb-3">Follow Us</h4><div class="flex space-x-4"><a href="#" class="hover:text-pink-400">WhatsApp</a><a href="#" class="hover:text-pink-400">Facebook</a><a href="#" class="hover:text-pink-400">Instagram</a><a href="#" class="hover:text-pink-400">YouTube</a></div></div>
+        </div>
+        <div class="border-t border-gray-700 text-center py-5"><p>&copy; 2025 Local Shoppee. All rights reserved.</p></div>
+    </footer>
+</body>
+</html>
