@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangles - Local Shoppee</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Lato', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-pink-50 font-sans">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html">
+                <img src="1001.jpg" alt="Local Shoppee Logo" class="h-12 w-auto">
+            </a>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="index.html" class="text-gray-600 hover:text-pink-600">Home</a>
+                <a href="products.html" class="text-gray-600 hover:text-pink-600">Clothes</a>
+                <a href="jewelry.html" class="text-pink-600 font-bold">Jewelry</a>
+                <a href="about.html" class="text-gray-600 hover:text-pink-600">About & Contact</a>
+            </div>
+            <div class="flex items-center space-x-5">
+                <a href="signin.html" class="text-gray-600 hover:text-pink-600 text-sm font-medium">Sign In</a>
+                <a href="cart.html" class="relative text-gray-600 hover:text-pink-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007Z" /></svg>
+                    <span class="absolute -top-2 -right-2 bg-pink-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center font-bold">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+            
+            <div class="space-y-6">
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+                    <img src="https://images.pexels.com/photos/3641059/pexels-photo-3641059.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bangles" class="w-full object-cover">
+                </div>
+                
+                <div class="grid grid-cols-4 gap-2">
+                    <img src="https://images.pexels.com/photos/3641056/pexels-photo-3641056.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Bangle variation" class="w-full h-24 object-cover rounded-md cursor-pointer border-2 border-pink-500">
+                    <img src="https://images.pexels.com/photos/3266703/pexels-photo-3266703.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Bangle variation" class="w-full h-24 object-cover rounded-md cursor-pointer border-2 border-transparent hover:border-pink-500">
+                    <img src="https://images.pexels.com/photos/10374668/pexels-photo-10374668.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Bangle variation" class="w-full h-24 object-cover rounded-md cursor-pointer border-2 border-transparent hover:border-pink-500">
+                    <img src="https://images.pexels.com/photos/3641059/pexels-photo-3641059.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Bangle variation" class="w-full h-24 object-cover rounded-md cursor-pointer border-2 border-transparent hover:border-pink-500">
+                </div>
+
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+                    <video src="1021.mp4" controls autoplay muted loop class="w-full"></video>
+                </div>
+            </div>
+            
+            <div class="flex flex-col justify-center">
+                <h1 class="text-5xl font-serif font-bold text-gray-800 mb-4">Classic Bangles</h1>
+                <p class="text-4xl font-bold text-pink-600 mb-6">₹100</p>
+                
+                <div class="space-y-4 text-gray-700 text-lg">
+                    <p><strong>Material:</strong> Gold Plated</p>
+                    <p><strong>Weight:</strong> 15g</p>
+                    <p><strong>Stock:</strong> <span class="text-green-600 font-semibold">Available</span></p>
+                    
+                    <div>
+                        <strong class="mb-2 block">Description:</strong>
+                        <p class="text-base">Beautiful set of classic gold-plated bangles, perfect for traditional wear and festive occasions. Sold as a set of 4.</p>
+                    </div>
+                </div>
+                
+                <a href="cart.html" class="w-full md:w-auto text-center bg-pink-600 text-white rounded-lg py-3 px-8 mt-8 font-semibold text-lg hover:bg-pink-700">
+                    Add to Cart
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 mt-16">
+        <div class="container mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div><h4 class="text-lg font-serif font-bold text-white mb-3">Address</h4><p>📍 Kakinada, Andhra Pradesh, India</p></div>
+            <div><h4 class="text-lg font-serif font-bold text-white mb-3">Contact</h4><p>📞 6302300945</p><p>✉️ support@localshoppee.com</p></div>
+            <div><h4 class="text-lg font-serif font-bold text-white mb-3">Follow Us</h4><div class="flex space-x-4"><a href="#" class="hover:text-pink-400">WhatsApp</a><a href="#" class="hover:text-pink-400">Facebook</a><a href="#" class="hover:text-pink-400">Instagram</a><a href="#" class="hover:text-pink-400">YouTube</a></div></div>
+        </div>
+        <div class="border-t border-gray-700 text-center py-5"><p>&copy; 2025 Local Shoppee. All rights reserved.</p></div>
+    </footer>
+</body>
+</html>
