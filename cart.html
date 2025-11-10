@@ -30,67 +30,56 @@
             <div class="hidden md:flex space-x-8 font-medium">
                 <a href="index.html" class="text-gray-600 hover:text-pink-600">Home</a>
                 <a href="products.html" class="text-gray-600 hover:text-pink-600">Products</a>
+                <a href="jewelry.html" class="text-gray-600 hover:text-pink-600">Jewelry</a>
                 <a href="about.html" class="text-gray-600 hover:text-pink-600">About & Contact</a>
             </div>
             <div class="flex items-center space-x-5">
                 <a href="signin.html" class="text-gray-600 hover:text-pink-600 text-sm font-medium">Sign In</a>
                 <a href="cart.html" class="relative text-pink-600 font-bold">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007Z" /></svg>
+                    <span class="absolute -top-2 -right-2 bg-pink-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center font-bold">0</span>
                 </a>
             </div>
         </nav>
     </header>
     <main class="container mx-auto px-4 py-12">
         <h1 class="text-4xl font-serif font-bold text-gray-800 mb-8">Your Shopping Cart</h1>
+        
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
             <div class="lg:col-span-2 space-y-6">
-                <div class="flex items-center bg-white p-4 rounded-lg shadow-md">
-                    <img src="1015.jpg" alt="Saree" class="w-24 h-24 rounded-lg object-cover">
-                    <div class="flex-1 ml-4">
-                        <h2 class="text-lg font-serif font-bold text-gray-800">White Georgette Saree</h2>
-                        <p class="text-gray-600">Color: White</p>
-                        <p class="text-lg font-bold text-pink-600 mt-1">₹600</p>
-                    </div>
-                    <div class="flex items-center space-x-2"><button class="text-gray-500">-</button><span class="w-10 text-center font-semibold">1</span><button class="text-gray-500">+</button></div>
-                    <button class="ml-6 text-red-500 hover:text-red-700">Remove</button>
+                
+                <div class="bg-white p-10 rounded-lg shadow-md text-center">
+                    <p class="text-gray-600 text-xl">Your cart is currently empty.</p>
+                    <a href="products.html" class="text-pink-600 font-semibold text-lg mt-4 inline-block hover:underline">
+                        Start Shopping
+                    </a>
                 </div>
-                <div class="flex items-center bg-white p-4 rounded-lg shadow-md">
-                    <img src="1018.jpg" alt="Saree" class="w-24 h-24 rounded-lg object-cover">
-                    <div class="flex-1 ml-4">
-                        <h2 class="text-lg font-serif font-bold text-gray-800">Red Embroidered Saree</h2>
-                        <p class="text-gray-600">Color: Red</p>
-                        <p class="text-lg font-bold text-pink-600 mt-1">₹600</p>
-                    </div>
-                    <div class="flex items-center space-x-2"><button class="text-gray-500">-</button><span class="w-10 text-center font-semibold">1</span><button class="text-gray-500">+</button></div>
-                    <button class="ml-6 text-red-500 hover:text-red-700">Remove</button>
-                </div>
+
             </div>
+            
             <div class="lg:col-span-1">
                 <div class="bg-white p-6 rounded-lg shadow-xl sticky top-8">
                     <h2 class="text-2xl font-serif font-bold text-gray-800 mb-6 border-b pb-4">Order Summary</h2>
+                    
                     <div class="space-y-3 mb-6">
-                        <div class="flex justify-between text-gray-700"><span>Subtotal</span><span>₹1200.00</span></div>
-                        <div class="flex justify-between text-gray-700"><span>Delivery</span><span class="text-green-600">FREE</span></div>
-                        <div class="flex justify-between text-xl font-bold text-gray-800 pt-3 border-t"><span>Total Amount</span><span>₹1208.00</span></div>
+                        <div class="flex justify-between text-gray-700">
+                            <span>Subtotal</span>
+                            <span>₹0.00</span>
+                        </div>
+                        <div class="flex justify-between text-gray-700">
+                            <span>Delivery</span>
+                            <span class="text-green-600">FREE</span>
+                        </div>
+                        <div class="flex justify-between text-xl font-bold text-gray-800 pt-3 border-t">
+                            <span>Total Amount</span>
+                            <span>₹0.00</span>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-serif font-semibold text-gray-800 mb-4">Payment Options</h3>
-                    <div class="space-y-3 mb-6">
-                        <label class="flex items-center p-3 border rounded-lg has-[:checked]:bg-pink-50 has-[:checked]:border-pink-500">
-                            <input type="radio" name="payment" class="text-pink-600 focus:ring-pink-500"><span class="ml-3 font-medium">💳 Card (Credit/Debit)</span>
-                        </label>
-                        <label class="flex items-center p-3 border rounded-lg has-[:checked]:bg-pink-50 has-[:checked]:border-pink-500">
-                            <input type="radio" name="payment" class="text-pink-600 focus:ring-pink-500"><span class="ml-3 font-medium">📱 PhonePe / Paytm</span>
-                        </label>
-                        <label class="flex items-center p-3 border rounded-lg has-[:checked]:bg-pink-50 has-[:checked]:border-pink-500">
-                            <input type="radio" name="payment" class="text-pink-600 focus:ring-pink-500" checked><span class="ml-3 font-medium">💵 Cash on Delivery</span>
-                        </label>
+
                     </div>
-                    <p class="text-sm text-gray-600 mb-6">Estimated Delivery Date: <strong class="text-gray-800">Oct 30, 2025</strong></p>
-                    <button class="w-full bg-pink-600 text-white rounded-lg py-3 px-4 text-lg font-semibold hover:bg-pink-700">
-                        Confirm Purchase
-                    </button>
-                </div>
             </div>
+            
         </div>
     </main>
     <footer class="bg-gray-800 text-gray-300 mt-16">
